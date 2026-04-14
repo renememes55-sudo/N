@@ -240,17 +240,7 @@ tr:hover { background:#f1f1f1; }
 </div>
 
 <script>
-// Checar permissão
-const tipoUsuario = localStorage.getItem('currentUserRole') || 'visitante';
-window.onload = () => {
-    if(tipoUsuario === 'visitante'){
-        document.getElementById('addBtn').style.display='none';
-        document.getElementById('removeBtn').style.display='none';
-        document.getElementById('userAdminBlock').style.display='none';
-    } else if(tipoUsuario === 'chefe'){
-        document.getElementById('userAdminBlock').style.display='block';
-    }
-};
+
 
 // Logout
 document.getElementById('logout').onclick = () => {
